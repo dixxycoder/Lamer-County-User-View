@@ -7,7 +7,7 @@
 
 import Foundation
 
-class events
+class Events
 {
     var name : String
     
