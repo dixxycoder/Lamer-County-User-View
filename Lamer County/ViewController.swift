@@ -12,15 +12,12 @@ class ViewController: UIViewController,UITableViewDataSource
     @IBOutlet weak var eventTableView: UITableView!
 
     var event : [Events] = []
-
-    override func viewDidLoad()
+    
+    func showingEvents()
     {
-        super.viewDidLoad()
-        eventTableView.dataSource = self
-        
-        let event1 = Events(name:"boys & girls")
-        let event2 = Events(name:"Bike")
-        event = [event1,event2]
+    let event1 = Events(name:"boys & girls")
+    let event2 = Events(name:"Bike")
+  let event = [event1,event2]
     }
     
     
@@ -38,7 +35,14 @@ class ViewController: UIViewController,UITableViewDataSource
         return cell
     }
     
+    
+//MARK: ViewDidLoad
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
 
+        eventTableView.dataSource = self
+    }
     
     
 }
