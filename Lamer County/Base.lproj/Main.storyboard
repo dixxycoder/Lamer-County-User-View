@@ -40,7 +40,21 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem style="plain" id="hfj-fC-oUr">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="xqd-9D-eRy">
+                                <rect key="frame" x="20" y="10" width="374" height="34.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="map"/>
+                                <connections>
+                                    <segue destination="YbN-HQ-7DS" kind="show" id="RSf-AK-hcE"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </toolbarItems>
                     <navigationItem key="navigationItem" id="isQ-Ds-pnp"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="eventTableView" destination="dCM-ck-eob" id="O2w-cF-taw"/>
                     </connections>
@@ -58,7 +72,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Yk5-w9-7E1">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                             </mapView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nsQ-AP-1ej"/>
@@ -70,6 +84,11 @@
                             <constraint firstItem="Yk5-w9-7E1" firstAttribute="leading" secondItem="nsQ-AP-1ej" secondAttribute="leading" id="op8-EX-wtE"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="dHP-wa-eDi"/>
+                    <connections>
+                        <outlet property="mapView" destination="Yk5-w9-7E1" id="lHX-oJ-8DI"/>
+                        <outlet property="mapViiew" destination="Yk5-w9-7E1" id="fpz-Dy-d0P"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mga-qx-uDs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
