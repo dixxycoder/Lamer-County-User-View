@@ -9,17 +9,22 @@ import UIKit
 
 class ViewController: UIViewController,UITableViewDataSource
 {
+    
     @IBOutlet weak var eventTableView: UITableView!
 
     var event : [Events] = []
     
-    func showingEvents()
-    {
-    let event1 = Events(name:"boys & girls")
-    let event2 = Events(name:"Bike")
-  let event = [event1,event2]
-    }
-    
+    //MARK: ViewDidLoad
+        override func viewDidLoad()
+        {
+            super.viewDidLoad()
+
+            eventTableView.dataSource = self
+            
+            let event1 = Events(name:"boys & girls")
+            let event2 = Events(name:"Bike")
+           event = [event1,event2]
+        }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
@@ -34,15 +39,5 @@ class ViewController: UIViewController,UITableViewDataSource
         cell.textLabel?.text = currentItem.name
         return cell
     }
-    
-    
-//MARK: ViewDidLoad
-    override func viewDidLoad()
-    {
-        super.viewDidLoad()
-
-        eventTableView.dataSource = self
-    }
-    
     
 }
