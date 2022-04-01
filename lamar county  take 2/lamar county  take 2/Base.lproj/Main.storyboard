@@ -135,10 +135,10 @@
             </objects>
             <point key="canvasLocation" x="2676.811594202899" y="65.625"/>
         </scene>
-        <!--Map Even Controller-->
+        <!--Map of the Even Controller-->
         <scene sceneID="r5P-S0-5hS">
             <objects>
-                <viewController id="XpU-UI-tlE" customClass="Map_Even_Controller" customModule="lamar_county__take_2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XpU-UI-tlE" customClass="Map_of_the_Even_Controller" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jY6-Ce-rMr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

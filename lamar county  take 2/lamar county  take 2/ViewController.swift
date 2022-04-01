@@ -43,6 +43,12 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        let nextViewController = segue.destination as! Map_Even_Controller
+        
+    }
+    
 
 }
 
