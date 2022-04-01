@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController,UITableViewDataSource
+class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSource
 {
     // the tVFE stands for tableViewForEvents.
     @IBOutlet var tVFE: UITableView!
@@ -24,10 +24,10 @@ class ViewController: UIViewController,UITableViewDataSource
         event = [event1,event2]
     }
     
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return event.count
-        
         
     }
     
@@ -35,8 +35,11 @@ class ViewController: UIViewController,UITableViewDataSource
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "events", for: indexPath)
+        
         let currentItem = event[indexPath.row]
+        
         cell.textLabel?.text = currentItem.name
+        
         return cell
     }
     

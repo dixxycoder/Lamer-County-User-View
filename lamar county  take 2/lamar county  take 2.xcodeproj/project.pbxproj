@@ -14,6 +14,8 @@
 		257D673227E8EA260094414F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 257D673127E8EA260094414F /* Assets.xcassets */; };
 		257D673527E8EA260094414F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 257D673327E8EA260094414F /* LaunchScreen.storyboard */; };
 		257D673D27E8ED3B0094414F /* eventS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257D673C27E8ED3B0094414F /* eventS.swift */; };
+		258290C527EB8F230021B457 /* Map Even Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258290C427EB8F230021B457 /* Map Even Controller.swift */; };
+		25EE50F227F76A1500859AC9 /* Map of the Event Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EE50F127F76A1500859AC9 /* Map of the Event Controller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		257D673427E8EA260094414F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		257D673627E8EA260094414F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		257D673C27E8ED3B0094414F /* eventS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventS.swift; sourceTree = "<group>"; };
+		258290C427EB8F230021B457 /* Map Even Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Map Even Controller.swift"; sourceTree = "<group>"; };
+		25EE50F127F76A1500859AC9 /* Map of the Event Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Map of the Event Controller.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 				257D672827E8EA240094414F /* AppDelegate.swift */,
 				257D672A27E8EA240094414F /* SceneDelegate.swift */,
 				257D672C27E8EA240094414F /* ViewController.swift */,
+				258290C427EB8F230021B457 /* Map Even Controller.swift */,
+				25EE50F127F76A1500859AC9 /* Map of the Event Controller.swift */,
 				257D673C27E8ED3B0094414F /* eventS.swift */,
 				257D672E27E8EA240094414F /* Main.storyboard */,
 				257D673127E8EA260094414F /* Assets.xcassets */,
@@ -141,6 +147,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25EE50F227F76A1500859AC9 /* Map of the Event Controller.swift in Sources */,
+				258290C527EB8F230021B457 /* Map Even Controller.swift in Sources */,
 				257D673D27E8ED3B0094414F /* eventS.swift in Sources */,
 				257D672D27E8EA240094414F /* ViewController.swift in Sources */,
 				257D672927E8EA240094414F /* AppDelegate.swift in Sources */,
