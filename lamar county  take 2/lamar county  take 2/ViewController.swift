@@ -57,7 +57,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         nextViewController.adressOfEvent
             .setTitle(adress, for: .normal)
         }
-        else 
+        else
 {
             
             nextViewController.adress = "I25"
