@@ -12,6 +12,8 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     // the tVFE stands for tableViewForEvents.
     @IBOutlet var tVFE: UITableView!
     
+    var adress = ""
+    
     var event : [Event] = []
     override func viewDidLoad()
     {
@@ -19,6 +21,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         
         tVFE.dataSource = self
         
+        // MARK: example
         let event1 = Event(name:"boys & girls")
         let event2 = Event(name:"bick")
         event = [event1,event2]
@@ -46,6 +49,21 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         let nextViewController = segue.destination as! Map_Even_Controller
+        
+        if segue.identifier == "boys & girls"
+        {
+// MARK: example
+        nextViewController.adress = "7823 little fox lane"
+        nextViewController.adressOfEvent
+            .setTitle(adress, for: .normal)
+        }
+        else //segue.identifier == "boys & girls"
+{
+            nextViewController.adress = "I25"
+            nextViewController.adressOfEvent
+                .setTitle(adress, for: .normal)
+        }
+        
         
     }
     
