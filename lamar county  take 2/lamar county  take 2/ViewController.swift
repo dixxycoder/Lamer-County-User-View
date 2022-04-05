@@ -57,8 +57,9 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         nextViewController.adressOfEvent
             .setTitle(adress, for: .normal)
         }
-        else //segue.identifier == "boys & girls"
+        else 
 {
+            
             nextViewController.adress = "I25"
             nextViewController.adressOfEvent
                 .setTitle(adress, for: .normal)
