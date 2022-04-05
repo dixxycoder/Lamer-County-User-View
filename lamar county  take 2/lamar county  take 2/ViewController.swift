@@ -54,15 +54,13 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         {
 // MARK: example
         nextViewController.adress = "7823 little fox lane"
-        nextViewController.adressOfEvent
-            .setTitle(adress, for: .normal)
+      // nextViewController.adressOfEvent.setTitle(adress, for: .normal)
         }
         else
 {
             
             nextViewController.adress = "I25"
-            nextViewController.adressOfEvent
-                .setTitle(adress, for: .normal)
+          //  nextViewController.adressOfEvent.setTitle(adress, for: .normal)
         }
         
         

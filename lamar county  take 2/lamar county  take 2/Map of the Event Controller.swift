@@ -11,37 +11,37 @@ import MapKit
 
 class Map_of_the_Event_Controller: UIViewController, CLLocationManagerDelegate
 {
-//
-//    @IBOutlet weak var mapView: MKMapView!
-//
-//    let locationManager = CLLocationManager()
-//
-//    var currentLocation: CLLocation!
-//
-//    var parks: [MKMapItem] = []
-//
-//    override func viewDidLoad()
-//    {
-//        super.viewDidLoad()
-//
-//        locationManager.delegate = self
-//        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-//        locationManager.startUpdatingLocation()
-//        locationManager.requestWhenInUseAuthorization()
-//        mapView.showsUserLocation = true
-//    }
-//
-//    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
-//    {
-//     currentLocation = locations[0]
-//    }
-//
+
+    @IBOutlet weak var mappyView: MKMapView!
+    
+    let locationManager = CLLocationManager()
+
+    var currentLocation: CLLocation!
+
+    var parks: [MKMapItem] = []
+
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.startUpdatingLocation()
+        locationManager.requestWhenInUseAuthorization()
+        mappyView.showsUserLocation = true
+    }
+
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
+    {
+     currentLocation = locations[0]
+    }
+
 //    @IBAction func ZoomButton(_ sender: UIBarButtonItem)
 //    {
 //        let coordinateSpan = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
 //        let center = currentLocation.coordinate
 //        let region = MKCoordinateRegion(center: center, span: coordinateSpan)
-//        mapView.setRegion(region, animated: true)
+//        mappyView.setRegion(region, animated: true)
 //    }
 //
 //    @IBAction func whenSearch(_ sender: Any)
@@ -69,7 +69,7 @@ class Map_of_the_Event_Controller: UIViewController, CLLocationManagerDelegate
 //        annotation.coordinate = mapItem.placemark.coordinate
 //        annotation.title = mapItem.name
 //
-//        self.mapView.addAnnotation(annotation)
+//        self.mappyView.addAnnotation(annotation)
 //            }
 //        }
 //    }
