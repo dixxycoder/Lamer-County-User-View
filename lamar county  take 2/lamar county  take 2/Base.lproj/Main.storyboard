@@ -8,11 +8,29 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="nC4-CH-c2O">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jzI-ZT-QPN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="P2H-eb-XK5">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="MPt-zL-w3b"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MOT-Y5-HY2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1848" y="66"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="lamar_county__take_2" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" delaysContentTouches="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="LZF-na-G2p" customClass="tableView">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" delaysContentTouches="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="LZF-na-G2p" customClass="tableView" customModule="lamar_county__take_2" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -46,10 +64,6 @@
                             </tableViewCell>
                         </prototypes>
                         <sections/>
-                        <connections>
-                            <outlet property="dataSource" destination="BYZ-38-t0r" id="a5G-I2-sir"/>
-                            <outlet property="delegate" destination="BYZ-38-t0r" id="WhX-CX-XV0"/>
-                        </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="hN0-sd-cOl"/>
                     <connections>
@@ -58,7 +72,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1849.2753623188407" y="65.625"/>
+            <point key="canvasLocation" x="2757.971014492754" y="65.625"/>
         </scene>
         <!--Map Even Controller-->
         <scene sceneID="ZuX-2y-m2i">
@@ -127,67 +141,45 @@
                     <connections>
                         <outlet property="adressOfEvent" destination="ec1-2J-bP3" id="uhi-9O-AhH"/>
                         <outlet property="dateOfEvent" destination="GOy-c4-tFw" id="SOv-ja-URi"/>
-                        <outlet property="nameOfEvent" destination="yQk-Td-xYz" id="0pa-2V-LA6"/>
+                        <outlet property="nameOfEvent" destination="yQk-Td-xYz" id="qNg-vX-IGU"/>
                         <outlet property="timeOfEvent" destination="uZa-7N-yRD" id="6hk-VZ-Cwi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ulo-jI-Nkp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2676.811594202899" y="65.625"/>
+            <point key="canvasLocation" x="3586.9565217391305" y="65.625"/>
         </scene>
-        <!--Map of the Even Controller-->
+        <!--Map View Controller-->
         <scene sceneID="r5P-S0-5hS">
             <objects>
-                <viewController id="XpU-UI-tlE" customClass="Map_of_the_Even_Controller" sceneMemberID="viewController">
+                <viewController id="XpU-UI-tlE" customClass="MapViewController" customModule="lamar_county__take_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jY6-Ce-rMr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="53R-ky-zXb">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
-                            </mapView>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Kb1-wP-uJs">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gmr-YI-bBs">
+                                <rect key="frame" x="0.0" y="93" width="414" height="764"/>
                             </mapView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="40v-sK-2iK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="53R-ky-zXb" firstAttribute="top" secondItem="40v-sK-2iK" secondAttribute="top" id="9qW-6d-5XO"/>
-                            <constraint firstItem="53R-ky-zXb" firstAttribute="leading" secondItem="40v-sK-2iK" secondAttribute="leading" id="V6t-I1-xyN"/>
-                            <constraint firstItem="40v-sK-2iK" firstAttribute="bottom" secondItem="53R-ky-zXb" secondAttribute="bottom" id="gYO-hY-AOE"/>
-                            <constraint firstItem="40v-sK-2iK" firstAttribute="trailing" secondItem="53R-ky-zXb" secondAttribute="trailing" id="oNF-YA-mit"/>
+                            <constraint firstItem="40v-sK-2iK" firstAttribute="bottom" secondItem="gmr-YI-bBs" secondAttribute="bottom" constant="5" id="8rT-XI-aW0"/>
+                            <constraint firstItem="gmr-YI-bBs" firstAttribute="leading" secondItem="40v-sK-2iK" secondAttribute="leading" id="JsI-ad-Nlj"/>
+                            <constraint firstItem="gmr-YI-bBs" firstAttribute="top" secondItem="40v-sK-2iK" secondAttribute="top" constant="5" id="PWY-7Q-eyf"/>
+                            <constraint firstItem="gmr-YI-bBs" firstAttribute="trailing" secondItem="40v-sK-2iK" secondAttribute="trailing" id="bSq-73-RgG"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1Mx-rM-Vtw">
                         <nil key="title"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="mappyView" destination="Kb1-wP-uJs" id="PJy-gk-2ky"/>
+                        <outlet property="mapView" destination="gmr-YI-bBs" id="Mgr-gt-wft"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gE2-1F-vGu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3471.0144927536235" y="65.625"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="WcB-ih-D7z">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gVd-Rw-H8u" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OWt-BL-LqY">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="cAO-1y-THg"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1AH-DU-cJD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="933" y="66"/>
+            <point key="canvasLocation" x="4381.159420289855" y="65.625"/>
         </scene>
     </scenes>
     <resources>
