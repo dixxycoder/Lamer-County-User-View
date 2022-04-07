@@ -41,7 +41,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate
     }
     
     
-    @IBAction func ZoomButton(_ sender: UIBarButtonItem)
+    @IBAction func zoomButton(_ sender: Any)
     {
         let coordinateSpan = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
         let center = currentLocation.coordinate

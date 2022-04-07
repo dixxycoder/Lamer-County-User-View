@@ -157,18 +157,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gmr-YI-bBs">
-                                <rect key="frame" x="0.0" y="93" width="414" height="764"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gmr-YI-bBs">
+                                <rect key="frame" x="0.0" y="134" width="414" height="723"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Grt-k5-RoY">
+                                <rect key="frame" x="23" y="95" width="105" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Zoom"/>
+                                <connections>
+                                    <action selector="zoomButton:" destination="XpU-UI-tlE" eventType="touchUpInside" id="0oc-jr-D6m"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJf-Bh-TQZ">
+                                <rect key="frame" x="290" y="95" width="105" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Search"/>
+                                <connections>
+                                    <action selector="whenSearch:" destination="XpU-UI-tlE" eventType="touchUpInside" id="8PU-9T-4le"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="40v-sK-2iK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="40v-sK-2iK" firstAttribute="bottom" secondItem="gmr-YI-bBs" secondAttribute="bottom" constant="5" id="8rT-XI-aW0"/>
-                            <constraint firstItem="gmr-YI-bBs" firstAttribute="leading" secondItem="40v-sK-2iK" secondAttribute="leading" id="JsI-ad-Nlj"/>
-                            <constraint firstItem="gmr-YI-bBs" firstAttribute="top" secondItem="40v-sK-2iK" secondAttribute="top" constant="5" id="PWY-7Q-eyf"/>
-                            <constraint firstItem="gmr-YI-bBs" firstAttribute="trailing" secondItem="40v-sK-2iK" secondAttribute="trailing" id="bSq-73-RgG"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1Mx-rM-Vtw">
                         <nil key="title"/>
@@ -179,7 +192,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gE2-1F-vGu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4381.159420289855" y="65.625"/>
+            <point key="canvasLocation" x="4379.7101449275369" y="65.625"/>
         </scene>
     </scenes>
     <resources>
