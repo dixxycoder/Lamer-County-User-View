@@ -23,6 +23,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate
     
     var parks: [MKMapItem] = []
     
+    var adress = ""
     
     override func viewDidLoad()
     {
@@ -53,7 +54,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate
     @IBAction func whenSearch(_ sender: Any)
     {
         let request = MKLocalSearch.Request()
-        request.naturalLanguageQuery = "Parks"
+        request.naturalLanguageQuery = "\(adress)"
         
         let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
         request.region = MKCoordinateRegion(center: currentLocation.coordinate, span: span)

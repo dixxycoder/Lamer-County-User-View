@@ -18,12 +18,28 @@ class Map_Even_Controller: UIViewController
     
     @IBOutlet weak var timeOfEvent: UILabel!
     
-    var adress = ""
+    var adress = "7823 little fox ln"
+    var button1 = ""
 
     override func viewDidLoad()
     {
 
         super.viewDidLoad()
+        
+        button1 = "\(adress)"
+        adressOfEvent.setTitle(button1, for: .normal)
+
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        let nextViewController = segue.destination as! MapViewController
+        
+        if segue.identifier == adress
+        {
+            
+        }
 
     }
     
